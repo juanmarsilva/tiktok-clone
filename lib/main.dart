@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tik_tok_clone/config/theme/app_theme.dart';
+import 'package:tik_tok_clone/presentation/screens/discover/discover_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,15 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'TikTok',
       debugShowCheckedModeBanner: false,
       theme: AppTheme().getTheme(),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-          centerTitle: true,
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      home: const DiscoverScreen(),
     );
   }
 }
